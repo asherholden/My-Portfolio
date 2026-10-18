@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./styles.css">
 
+    <script src="app.js"></script>
+
 </head>
 
 <body>
@@ -23,29 +25,28 @@
 
     
 <section class="contact">
-        <div class="contact__container">
-            <div class="contact__heading">
-                <h1>Contact Me</h1>
-                <p>Feel free to reach out! I'd love to hear from you.</p>
-            </div>
-            <div class="contact__cards">
-                <div class="contact__card">
-                    <div class="contact__icon">
-                        <span>✉</span>
-                    </div>
-                    <div class="contact__details">
-                        <h2>Email</h2>
-                        <p>asherholden151@gmail.com</p>
-                    </div>
+            <div class="form__container">
+              <div class="contact__card">
+                <div class="contact__container">
+                  <div class="contact__heading">
+                  <h1>Contact Me</h1>
+                  <p>Feel free to reach out! I'd love to hear from you.</p>
                 </div>
-                <div class="contact__card">
-                    <div class="contact__icon">
-                        <span>☎</span>
-                    </div>
-                    <div class="contact__details">
-                        <h2>Phone Number</h2>
-                        <p>(713) 859-5973</p>
-                    </div>
+                    <form 
+                    action="https://api.web3forms.com/submit" 
+                    method="POST"
+                    class="contact__form"
+                    >
+                      <input contact__box type="hidden" name="access_key" value="f17040d6-cacc-4411-b4cc-8acf9b6c6187">
+                  
+                      <input  class="contact__box" type="text" name="name" required placeholder="Name">
+                     
+                      <input class="contact__box" type="email" name="email" required placeholder="Email">
+                  
+                      <textarea class=" contact__box contact__box--textarea" name="message" required placeholder="Message" rows="5" cols="50" ></textarea>
+                      <button class="contact__btn" type="submit">Submit Form</button>
+                    </form>
+                  </div>
                 </div>
             </div>
         </div>

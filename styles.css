@@ -456,49 +456,65 @@ footer {
 /* Heading */
 .contact__heading {
     text-align: center;
-    margin-bottom: 52px;
 }
 
 .contact__heading h1 {
     color: #17177f;
     font-size: 64px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .contact__heading p {
     color: #64748b;
-    font-size: 23px;
-    margin: 0;
+    font-size: 24px;
 }
 
-/* Cards Container */
-.contact__cards {
-    max-width: 670px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+/* Contact Form */
+
+
+.form__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* Individual Cards */
 .contact__card {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    padding: 22px 30px;
-    min-height: 120px;
-    background-color: #ffffff;
-    border: 1px solid #dce3f1;
-    border-radius: 16px;
-    box-sizing: border-box;
-    transition: box-shadow 0.2s ease,
-                transform 0.2s ease;
+  width: 50%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contact__card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(23, 23, 127, 0.08);
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  width: 600px;
+}
+
+.contact__box {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.contact__box--textarea {
+ width: 100%;
+ box-sizing: border-box;
+ resize: none;
+}
+
+.contact__btn {
+  border: none;
+  padding: 8px 0;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #111184;
+  margin-top: 24px;
+  font-size: 16px;
 }
 
 /* Icon Circle */
@@ -536,7 +552,7 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     .contact {
         padding: 48px 18px;
     }
