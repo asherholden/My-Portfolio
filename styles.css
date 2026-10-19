@@ -444,13 +444,7 @@ footer {
 
 /* Contact Section */
 .contact {
-    background-color: #f8f9fc;
-    padding: 64px 24px;
-}
-
-.contact__container {
-    max-width: 1000px;
-    margin: 0 auto;
+ background-color: #f8f9fc;
 }
 
 /* Heading */
@@ -474,12 +468,12 @@ footer {
 
 .form__container {
   width: 100%;
+  padding: 64px 0;
   display: flex;
   justify-content: center;
 }
 
 .contact__card {
-  width: 50%;
   background-color: white;
   padding: 16px;
   border-radius: 8px;
@@ -490,7 +484,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 24px auto;
-  width: 600px;
 }
 
 .contact__box {
